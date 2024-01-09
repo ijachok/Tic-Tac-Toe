@@ -91,6 +91,7 @@ class MainActivity : AppCompatActivity() {
                 (box3.text == "o" && box5.text == "o" && box7.text == "o")
             ) {
                 tvResult.text = resources.getString(R.string.o_won)
+                resetButton.visibility = View.VISIBLE
                 Toast.makeText(this@MainActivity, "O won the game", Toast.LENGTH_SHORT).show()
                 disableButtons()
             } else if (box1.text != "" && box2.text != "" && box3.text != "" &&
@@ -98,6 +99,7 @@ class MainActivity : AppCompatActivity() {
                 box7.text != "" && box8.text != "" && box9.text != ""
             ) {
                 tvResult.text = resources.getString(R.string.match_draw)
+                resetButton.visibility = View.VISIBLE
                 Toast.makeText(this@MainActivity, "It's a Tie... Play again...", Toast.LENGTH_SHORT)
                     .show()
             }
