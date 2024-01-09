@@ -7,6 +7,7 @@ import android.view.animation.AnimationUtils
 import android.widget.Button
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.content.ContextCompat
 import com.ijachok.tictactoe.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -48,13 +49,13 @@ class MainActivity : AppCompatActivity() {
 
         if (button.text == "") {
             if (player == "p1") {
-                button.background = resources.getDrawable(R.drawable.x_icon)
+                button.background = ContextCompat.getDrawable(binding.root.context, R.drawable.x_icon)
                 button.text = "x"
                 button.isClickable = false
                 button.startAnimation(anim)
                 player = "p2"
             } else {
-                button.background = resources.getDrawable(R.drawable.o_icon)
+                button.background = ContextCompat.getDrawable(binding.root.context, R.drawable.o_icon)
                 button.text = "o"
                 button.isClickable = false
                 button.startAnimation(anim)
@@ -76,7 +77,7 @@ class MainActivity : AppCompatActivity() {
                 (box1.text == "x" && box5.text == "x" && box9.text == "x") ||
                 (box3.text == "x" && box5.text == "x" && box7.text == "x")
             ) {
-                tvResult.text = "X won the game"
+                tvResult.text = resources.getString(R.string.x_won)
                 resetButton.visibility = View.VISIBLE
                 Toast.makeText(this@MainActivity, "X won the game", Toast.LENGTH_SHORT).show()
                 disableButtons()
@@ -89,14 +90,14 @@ class MainActivity : AppCompatActivity() {
                 (box1.text == "o" && box5.text == "o" && box9.text == "o") ||
                 (box3.text == "o" && box5.text == "o" && box7.text == "o")
             ) {
-                tvResult.text = "O won the game"
+                tvResult.text = resources.getString(R.string.o_won)
                 Toast.makeText(this@MainActivity, "O won the game", Toast.LENGTH_SHORT).show()
                 disableButtons()
             } else if (box1.text != "" && box2.text != "" && box3.text != "" &&
                 box4.text != "" && box5.text != "" && box6.text != "" &&
                 box7.text != "" && box8.text != "" && box9.text != ""
             ) {
-                tvResult.text = "Match Draw"
+                tvResult.text = resources.getString(R.string.match_draw)
                 Toast.makeText(this@MainActivity, "It's a Tie... Play again...", Toast.LENGTH_SHORT)
                     .show()
             }
@@ -122,15 +123,15 @@ class MainActivity : AppCompatActivity() {
 
         binding.apply {
 
-            box1.background = resources.getDrawable(R.drawable.box_icon)
-            box2.background = resources.getDrawable(R.drawable.box_icon)
-            box3.background = resources.getDrawable(R.drawable.box_icon)
-            box4.background = resources.getDrawable(R.drawable.box_icon)
-            box5.background = resources.getDrawable(R.drawable.box_icon)
-            box6.background = resources.getDrawable(R.drawable.box_icon)
-            box7.background = resources.getDrawable(R.drawable.box_icon)
-            box8.background = resources.getDrawable(R.drawable.box_icon)
-            box9.background = resources.getDrawable(R.drawable.box_icon)
+            box1.background = ContextCompat.getDrawable(binding.root.context, R.drawable.box_icon)
+            box2.background = ContextCompat.getDrawable(binding.root.context, R.drawable.box_icon)
+            box3.background = ContextCompat.getDrawable(binding.root.context, R.drawable.box_icon)
+            box4.background = ContextCompat.getDrawable(binding.root.context, R.drawable.box_icon)
+            box5.background = ContextCompat.getDrawable(binding.root.context, R.drawable.box_icon)
+            box6.background = ContextCompat.getDrawable(binding.root.context, R.drawable.box_icon)
+            box7.background = ContextCompat.getDrawable(binding.root.context, R.drawable.box_icon)
+            box8.background = ContextCompat.getDrawable(binding.root.context, R.drawable.box_icon)
+            box9.background = ContextCompat.getDrawable(binding.root.context, R.drawable.box_icon)
 
             box1.text = ""
             box2.text = ""
