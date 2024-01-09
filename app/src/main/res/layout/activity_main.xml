@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tv_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:textColor="@color/result_color"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/grid_layout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="Match Draw" />
+
+    <GridLayout
+        android:id="@+id/grid_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="3"
+        android:rowCount="3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/box1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="2dp"
+            android:background="@drawable/box_icon"
+            android:importantForAccessibility="no"
+            android:textSize="0sp"
+            app:backgroundTint="@color/title_color" />
+
+        <Button
+            android:id="@+id/box2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="2dp"
+            android:background="@drawable/box_icon"
+            android:importantForAccessibility="no"
+            android:textSize="0sp"
+            app:backgroundTint="@color/title_color" />
+
+        <Button
+            android:id="@+id/box3"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="2dp"
+            android:background="@drawable/box_icon"
+            android:importantForAccessibility="no"
+            android:textSize="0sp"
+            app:backgroundTint="@color/title_color" />
+
+        <Button
+            android:id="@+id/box4"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="2dp"
+            android:background="@drawable/box_icon"
+            android:importantForAccessibility="no"
+            android:textSize="0sp"
+            app:backgroundTint="@color/title_color" />
+
+        <Button
+            android:id="@+id/box5"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="2dp"
+            android:background="@drawable/box_icon"
+            android:importantForAccessibility="no"
+            android:textSize="0sp"
+            app:backgroundTint="@color/title_color" />
+
+        <Button
+            android:id="@+id/box6"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="2dp"
+            android:background="@drawable/box_icon"
+            android:importantForAccessibility="no"
+            android:textSize="0sp"
+            app:backgroundTint="@color/title_color" />
+
+        <Button
+            android:id="@+id/box7"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="2dp"
+            android:background="@drawable/box_icon"
+            android:importantForAccessibility="no"
+            android:textSize="0sp"
+            app:backgroundTint="@color/title_color" />
+
+        <Button
+            android:id="@+id/box8"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="2dp"
+            android:background="@drawable/box_icon"
+            android:importantForAccessibility="no"
+            android:textSize="0sp"
+            app:backgroundTint="@color/title_color" />
+
+        <Button
+            android:id="@+id/box9"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="2dp"
+            android:background="@drawable/box_icon"
+            android:importantForAccessibility="no"
+            android:textSize="0sp"
+            app:backgroundTint="@color/title_color" />
+
+    </GridLayout>
+
+
+    <Button
+        android:id="@+id/reset_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginBottom="30dp"
+        android:backgroundTint="@color/title_color"
+        android:text="@string/reset"
+        android:textColor="@color/design_default_color_on_primary"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/website_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="30dp"
+        android:backgroundTint="@color/title_color"
+        android:text="Our Website"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/app_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:text="@string/app_name"
+        android:textColor="@color/title_color"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

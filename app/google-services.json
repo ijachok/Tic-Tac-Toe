@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "652269426101",
+    "project_id": "onesignaltest-9faae",
+    "storage_bucket": "onesignaltest-9faae.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:652269426101:android:1e11dcb3068648141b35fc",
+        "android_client_info": {
+          "package_name": "com.ijachok.tictactoe"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDXlpQzVhtfcG5XmZVkrkjr2NNE5oUwyFc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
